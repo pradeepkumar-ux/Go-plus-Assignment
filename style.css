@@ -1,0 +1,99 @@
+body{
+  background-color: rgb(16, 65, 48);
+}
+
+
+/* Style for the form container */
+.form-container {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* atyling the h1 Tag */
+h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+h1:hover {
+  color: rgb(122, 63, 8);
+}
+
+
+/* Style for the form label */
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Style for the form input and select fields */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+/* Style for the form button */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for the user list container */
+.user-list-container {
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+/* Style for the user list table */
+#user-list {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style for the user list table head */
+#user-list th {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style for the user list table body */
+#user-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Style for the user list table row on hover */
+#user-list tr:hover {
+  background-color: #f5f5f5;
+}
